@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokeDex</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1>Poke Finder</h1>
+  <div id="filterContainer">
+    <strong><label id="filterLabel" for="typeSelect">Filter by Type:</label></strong>
+    <div id="typeContainer"></div>
+</div>
+
+<div id="mainDiv"></div>
+
+<div id="paginationContainer">
+  <button id="prevBtn">Prev</button>
+  <div id="pagination"></div>
+  <button id="nextBtn">Next</button>
+</div>
+
+<div id="pokemonModal" class="modal">
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<div id="pokemonCount"></div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
